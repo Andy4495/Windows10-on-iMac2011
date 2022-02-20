@@ -12,6 +12,8 @@ Neither [Intel][6] or [Microsoft][5] officially support Windows 10 on a Core i5-
 
 - Model Identifier `iMac12,1`
 - 2.5 GHz Core i5-2400S (Sandy Bridge)
+  - 4 cores, 4 threads
+  - Turbo Boost up to 3.3 GHz
 - AMD Radeon 6750M 512MB, 1920x1280
 - 12 GB RAM (upgraded from 4 GB standard)
 - 4x USB 2.0
@@ -58,9 +60,9 @@ As you did above, confirm the firmware versions in System Report before proceedi
 
 Boot Camp does not allow direct installation of Windows 10 [on this Mac][10]. Because of this, the installation procedure is less-than-straightforward, but eventually results in a fully-functioning and quite usable Windows 10 system which can still be booted into MacOS High Sierra if needed.
 
-Numerous procedures for installing Windows 10 onto the mid-2011 iMac can be found in blogs, message boards, and YouTube. However, I could not get any of those procedures to work on their own. The following is a procedure that I used after a lot of trial-and-error, which takes some hints from procedures that I found.It does specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
+Numerous procedures for installing Windows 10 onto the mid-2011 iMac can be found in blogs, message boards, and YouTube. However, I could not get any of those procedures to work on their own. The following is a procedure that I used after a lot of trial-and-error, which takes some hints from other procedures that I found. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
 
-Also, I am writing this procedure after-the-fact. I kept some notes during the process, but I did not take any screen captures or write down every specific command or step in the process, so I may have missed something.
+Also, I am writing this after-the-fact. I kept some notes during the process, but I did not take any screen captures or write down every specific command or step in the process, so I may have missed something.
 
 With this procedure, all hardware functionality of the iMac hardware is working:
 
@@ -71,7 +73,8 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Camera
 - USB
 - DisplayPort/Thunderbolt for second display
-- Did not test FireWire on Windows
+- FireWire not tested on Windows
+  - Windows 10 does not officially support FireWire (IEEE 1394)
 
 ### Before you begin, make sure that you have the following
 
@@ -79,6 +82,8 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Windows 8/8.1 install DVD
   - The DVD that I created from a Windows 8.1 ISO downloaded from Microsoft refused to work. Boot Camp insisted that it was a Windows 10 DVD. I'm not sure if my ISO was somehow corrupted, or if it contained some newer software that Boot Camp didn't recognize.
   - I eventually found an original Windows 8.1 DVD from a previous Windows purchase from several years ago. Boot Camp finally worked when using this old 8.1 install DVD.
+- Valid Windows Licene Key
+  - This is required during the Windows 8 installation process.
 
 ### The Procedure
 
@@ -87,9 +92,9 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Plug in the USB flash drive
   - Use Drive Setup to format it as MSDOS (FAT)
 - Insert the Windows 8/8.1 Install DVD
-- Run Boot Camp, check both boxes
+- Run Boot Camp and check both boxes
   - Boot Camp downloads software and copies it to the flash drive
-  - Next, it asks to partition drive to allocate space to Windows -- configure as you see fit
+  - Next, it asks to partition the drive to allocate space to Windows -- configure as you see fit
     - In my case, I allocated 300 GB of my 500 GB SSD to Windows, since I will primarily use this as a Windows machine
   - Boot Camp reboots
     - I expected it to copy the Windows installer to the USB drive. However, it did not. It will only install Windows from a physical DVD.
