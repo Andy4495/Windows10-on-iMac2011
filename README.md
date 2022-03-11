@@ -191,4 +191,4 @@ The software and other files in this repository are released under what is commo
 [14]: https://macsales.com
 [100]: https://choosealicense.com/licenses/mit/
 [101]: ./LICENSE.txt
-[200]: https://github.com/Andy4495/Windows10iMac2011
+[200]: https://github.com/Andy4495/Windows10-on-iMac2011
