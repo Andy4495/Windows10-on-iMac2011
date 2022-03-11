@@ -152,7 +152,7 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Run Apple Software Update
   - There are a couple updates needed for Windows 10
 - Run Windows Software Update to get fully up-to-date
-- You now have a fully-functional Windows 10 maching
+- You now have a fully-functional Windows 10 machine
   - You can switch back to MacOS at any time using Boot Camp
 
 ## Issues
