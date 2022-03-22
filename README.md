@@ -1,5 +1,7 @@
 # iMac Conversion to Windows Using Boot Camp
 
+[![Check Markdown Links](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/CheckMarkdownLinks.yml/badge.svg)](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/CheckMarkdownLinks.yml)
+
 ## Introduction
 
 Although the [Mid-2011 21.5" iMac][3] is more than ten years old, it has a capable [CPU][4] and a nice 21.5" LCD monitor. Replace the stock HDD with an SSD and the iMac can smoothly run MacOS X and Windows 10. Although Apple no longer provides software updates for this model (High Sierra 10.3 is the latest supported version), Windows 10 can be installed using Boot Camp with the procedure below. Windows 10 will continue to receive software updates from Microsoft until at least October 2025, giving this iMac several more years of useful operation.
