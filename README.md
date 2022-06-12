@@ -6,7 +6,7 @@
 
 Although the [Mid-2011 21.5" iMac][3] is more than ten years old, it has a capable [CPU][4] and a nice 21.5" LCD monitor. By replacing the stock HDD with an SSD, the iMac can smoothly run MacOS X and Windows 10.
 
-Unfortunately, Apple no longer provides software updates for this model (MacOS 10.3 High Sierrais the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. And since Windows 10 will continue to receive software updates from Microsoft until at least October 2025, this iMac can have several more years of useful operation running Windows.
+Unfortunately, Apple no longer provides software updates for this model (MacOS 10.3 High Sierra is the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. And since Windows 10 will continue to receive software updates from Microsoft until at least October 2025, this iMac can have several more years of useful operation running Windows.
 
 While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a Core i5-2400S CPU, there is nothing in the installation or upgrade process that prevents it from being installed or receiving software updates.
 
