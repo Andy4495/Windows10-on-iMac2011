@@ -4,9 +4,11 @@
 
 ## Introduction
 
-Although the [Mid-2011 21.5" iMac][3] is more than ten years old, it has a capable [CPU][4] and a nice 21.5" LCD monitor. Replace the stock HDD with an SSD and the iMac can smoothly run MacOS X and Windows 10. Although Apple no longer provides software updates for this model (High Sierra 10.3 is the latest supported version), Windows 10 can be installed using Boot Camp with the procedure below. Windows 10 will continue to receive software updates from Microsoft until at least October 2025, giving this iMac several more years of useful operation.
+Although the [Mid-2011 21.5" iMac][3] is more than ten years old, it has a capable [CPU][4] and a nice 21.5" LCD monitor. By replacing the stock HDD with an SSD, the iMac can smoothly run MacOS X and Windows 10.
 
-Neither [Intel][6] or [Microsoft][5] officially support Windows 10 on a Core i5-2400S CPU. However, nothing in the installation or upgrade process prevents it from being installed or receiving software updates.
+Unfortunately, Apple no longer provides software updates for this model (MacOS 10.3 High Sierrais the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. And since Windows 10 will continue to receive software updates from Microsoft until at least October 2025, this iMac can have several more years of useful operation running Windows.
+
+While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a Core i5-2400S CPU, there is nothing in the installation or upgrade process that prevents it from being installed or receiving software updates.
 
 ## Configuration
 
@@ -26,9 +28,7 @@ Neither [Intel][6] or [Microsoft][5] officially support Windows 10 on a Core i5-
 
 ## Replacing HDD with SSD
 
-Replacing the HDD with an SSD immediately makes this iMac a capable machine for general home use. It will not make it a gaming machine.
-
-However, the last MacOS version supported for this model is High Sierra (MacOS X 10.13.x), so Apple is no longer providing software and security updates.
+Replacing the HDD with an SSD immediately makes this iMac a capable machine for general home use.
 
 Before swapping the HDD for the SSD, install the latest MacOS updates on the HDD. This is mainly to ensure that you have the latest firmware installed.
 
@@ -60,13 +60,13 @@ As you did above, confirm the firmware versions in System Report before proceedi
 
 ## Installing Windows 10 Using Boot Camp
 
-Boot Camp does not allow direct installation of Windows 10 [on this Mac][10]. Because of this, the installation procedure is less-than-straightforward, but eventually results in a fully-functioning and quite usable Windows 10 system which can still be booted into MacOS High Sierra if needed.
+Boot Camp does not allow direct installation of Windows 10 [on this Mac][10]. Because of this, the installation procedure is less-than-straightforward, but eventually results in a fully-functioning and quite usable Windows 10 system which can still be booted into MacOS High Sierra if needed. Once Windows 10 is successfully installed, further updates run normally through Windows Software Update. In other words, you only need to run through this procedure once; after that, everything works normally.
 
 Numerous procedures for installing Windows 10 onto the mid-2011 iMac can be found in blogs, message boards, and YouTube. However, I could not get any of those procedures to work on their own. The following is a procedure that I used after a lot of trial-and-error, which takes some hints from other procedures that I found. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
 
-Also, I am writing this after-the-fact. I kept some notes during the process, but I did not take any screen captures or write down every specific command or step in the process, so I may have missed something.
+Also, I am writing this after-the-fact. I kept notes during the process, but I did not take any screen captures. I may not have written down every specific command or step in the process.
 
-With this procedure, all hardware functionality of the iMac hardware is working:
+After running this procedure, the functionality of the following iMac hardware is fully working in Windows:
 
 - Display
 - Audio
@@ -75,8 +75,8 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Camera
 - USB
 - DisplayPort/Thunderbolt for second display
-- FireWire not tested on Windows
-  - Windows 10 does not officially support FireWire (IEEE 1394)
+
+FireWire (IEEE 1394) was not tested, since Windows 10 does not officially support FireWire.
 
 ### Before you begin, make sure that you have the following
 
@@ -97,7 +97,7 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Run Boot Camp and check both boxes
   - Boot Camp downloads software and copies it to the flash drive
   - Next, it asks to partition the drive to allocate space to Windows -- configure as you see fit
-    - In my case, I allocated 300 GB of my 500 GB SSD to Windows, since I will primarily use this as a Windows machine
+    - In my case, I allocated 300 GB of my 500 GB SSD to Windows. If you never intend to use the MacOS partition for anything but Boot Camp, you could allocate even more to WIndows and less to MacOS.
   - Boot Camp reboots
     - I expected it to copy the Windows installer to the USB drive. However, it did not. It will only install Windows from a physical DVD.
 - As soon as you hear the reboot chime, hold down the OPTION key until you get the boot disk selection screen.
@@ -123,7 +123,7 @@ With this procedure, all hardware functionality of the iMac hardware is working:
 - Windows eventually completes the installation and then goes through several screens before logging into your Desktop.
 - Eject the Windows installer DVD.
 - Manually install Apple's "Windows Support Software"
-  - Go into the USB Flash drive, BootCamp folder and run Setup.
+  - Go into the USB Flash drive->BootCamp folder and run Setup.
   - Install all the files
   - I think you need to reboot after installing the Support Software. As before, hold down Option key and select Windows HDD.
 - Once the Windows Support Software is installed, you should be able to right-click the Boot Camp icon in the Taskbar, and select Windows as your startup disk so you don't need to hold down the Option key and manually select Windows at each boot.
