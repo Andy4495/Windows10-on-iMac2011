@@ -90,7 +90,7 @@ Confirm the firmware versions in About This Mac -> System Report before proceedi
 - Windows 8/8.1 install DVD
   - The DVD that I created from a Windows 8.1 ISO downloaded from Microsoft refused to work. Boot Camp insisted that it was a Windows 10 DVD. I'm not sure if my ISO was somehow corrupted, or if it contained some newer software that Boot Camp didn't recognize.
   - I eventually found an original Windows 8.1 DVD from a previous Windows purchase from several years ago. Boot Camp finally worked when using this old 8.1 install DVD.
-- Valid Windows Licene Key
+- Valid Windows License Key
   - This is required during the Windows 8 installation process.
 - Printed out copy of the procedure below.
 
