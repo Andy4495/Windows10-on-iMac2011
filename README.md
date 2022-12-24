@@ -6,9 +6,9 @@
 
 Although the [Mid-2011 21.5" iMac][3] is more than ten years old, it has a capable [CPU][4] and a nice 21.5" LCD monitor. By replacing the stock HDD with an SSD, the iMac can smoothly run MacOS X and Windows 10.
 
-Unfortunately, Apple no longer provides software updates for this model (MacOS 10.3 High Sierra is the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. And since Windows 10 will continue to receive software updates from Microsoft until at least October 2025, this iMac can have several more years of useful operation running Windows.
+Unfortunately, Apple no longer provides software updates for this model (MacOS 10.13 High Sierra is the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. And since Windows 10 will continue to receive software updates from Microsoft until at least October 2025, this iMac can have several more years of useful operation running Windows.
 
-While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a Core i5-2400S CPU, there is nothing in the installation or upgrade process that prevents it from being installed or receiving software updates.
+While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a Core i5-2400S CPU, there is nothing in the installation or upgrade process that prevents Windows from being installed or receiving software updates.
 
 ## Configuration
 
@@ -47,7 +47,7 @@ Next, create a [bootable USB installer][8] to re-install High Sierra after insta
 
 Upgrade vendor [OWC][14] no longer seems to post a video for *replacing* the HDD with SSD -- all their videos are for installing SSD in the drive bay behind the optical drive. The drive bay installation is much more involved than the HDD replacement procedure.
 
-I still recommend watching the [OWC video][7] as a reference point to see how to do the initial glass panel and LCD removal, along with later portions of the procedure where the LCD and glass panel are put back into place. However, the OWC procedure has you do MUCH more work than is necessary to replace the HDD.
+I still recommend watching the [OWC video][7] as a reference point to see how to do the initial glass panel and LCD removal, along with later portions of the procedure where the LCD and glass panel are put back into place. However, the OWC procedure has you do MUCH more work than is necessary just to replace the HDD.
 
 Instead, use the procedure in this video: [Upgrade Apple iMac 2011 21" Hard Drive To Solid State Drive HDD To SSD][12] to see the specifics on how to replace the factory HDD with an SSD.
 
@@ -57,7 +57,7 @@ After replacing the HDD with a new SSD, perform a fresh install of MacOS High Si
 
 Boot Camp does not allow direct installation of Windows 10 [on this Mac][10]. Because of this, the installation procedure is less-than-straightforward, but eventually results in a fully-functioning and quite usable Windows 10 system which can still be booted into MacOS High Sierra if needed. Once Windows 10 is successfully installed, further updates run normally through Windows Software Update. In other words, you only need to run through this procedure once; after that, everything works normally.
 
-Numerous procedures for installing Windows 10 onto the mid-2011 iMac can be found in blogs, message boards, and YouTube. However, I could not get any of those procedures to work on their own. The following is a procedure that I used after a lot of trial-and-error, which takes some hints from other procedures that I found. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
+Numerous procedures for installing Windows 10 onto the mid-2011 iMac can be found in blogs, message boards, and YouTube. However, I could not get any of those procedures to work on their own. The following is a procedure that finally worked after a lot of trial-and-error. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
 
 Also, I am writing this after-the-fact. I kept notes during the process, but I did not take any screen captures. I may not have written down every specific command or step in the process.
 
@@ -71,7 +71,7 @@ After running this procedure, the functionality of the following iMac hardware i
 - USB
 - DisplayPort/Thunderbolt for second display
 
-FireWire (IEEE 1394) was not tested, since Windows 10 does not officially support FireWire.
+FireWire (IEEE 1394) was not tested.
 
 ### Install Latest MacOS Updates and Firmware
 
@@ -185,7 +185,7 @@ The software and other files in this repository are released under what is commo
 
 ## Revision History
 
-1.0 - 2/19/2022 - Initial version created based on January 2022 installation.  
+1.0 - 2/19/2022 - Initial version based on an actual installation performed in January 2022.  
 Minor clarifying updates have been made since then, but the overall procedure is the same.
 
 [1]: https://everymac.com/systems/apple/imac/specs/imac-core-i5-2.5-21-inch-aluminum-mid-2011-thunderbolt-specs.html
