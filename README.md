@@ -1,6 +1,6 @@
 # iMac Conversion to Windows Using Boot Camp
 
-[![Check Markdown Links](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/CheckMarkdownLinks.yml/badge.svg)](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/CheckMarkdownLinks.yml)
+[![Check Markdown Links](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/check-links.yml/badge.svg)](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/check-links.yml)
 
 ## Introduction
 
@@ -198,7 +198,6 @@ Minor clarifying updates have been made since then, but the overall procedure is
 [8]: https://support.apple.com/en-us/HT201372
 [9]: https://support.apple.com/en-us/HT204904
 [10]: https://support.apple.com/en-us/HT201468
-<!-- markdown-link-check-disable-next-line -->
 [11]: https://www.microsoft.com/en-us/software-download/windows10
 [12]: https://www.youtube.com/watch?v=Nepfo5ASWyU
 [13]: https://support.apple.com/kb/DL2059?locale=en_US
