@@ -2,13 +2,21 @@
 
 [![Check Markdown Links](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/check-links.yml/badge.svg)](https://github.com/Andy4495/Windows10-on-iMac2011/actions/workflows/check-links.yml)
 
+## Update (January 2025)
+
+With the announced [end-of-support for Windows 10][15], this repo has been archived and will no longer be updated.
+
+I attempted to [update to Windows 11][16], but was unsuccessful. An in-place failed due to not meeting the hardware requirements (secure boot and TPM), despite making registry key updates to disable the hardware checks. A clean install of Windows 11 also failed because the BootCamp partition was formatted MBR instead of GPT and I could not find a simple way to change it.
+
+Also, now that [Microsoft no longer allows free upgrades to Windows 10][17] from Windows 8 product keys, this procedure may no longer be useable.
+
 ## Introduction
 
 Although the [Mid-2011 21.5" iMac][3] is more than ten years old, it has a capable [CPU][4] and a nice 21.5" LCD monitor. By replacing the stock HDD with an SSD, the iMac can smoothly run MacOS X and Windows 10.
 
-Unfortunately, Apple no longer provides software updates for this model (MacOS 10.13 High Sierra is the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. And since Windows 10 will continue to receive software updates from Microsoft until at least October 2025, this iMac can have several more years of useful operation running Windows.
+Unfortunately, Apple no longer provides software updates for this model (MacOS 10.13 High Sierra is the latest supported version). However, Windows 10 can be installed with Boot Camp by using the procedure below. Windows 10 will receive software updates from Microsoft until October 2025.
 
-While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a Core i5-2400S CPU, there is nothing in the installation or upgrade process that prevents Windows from being installed or receiving software updates.
+While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a Core i5-2400S CPU, there is nothing in the installation or upgrade process that prevents Windows 10 from being installed or receiving software updates.
 
 ## Configuration
 
@@ -19,7 +27,8 @@ While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a
   - 4 cores, 4 threads
   - Turbo Boost up to 3.3 GHz
 - AMD Radeon 6750M 512MB, 1920x1280
-- 12 GB RAM (upgraded from 4 GB standard)
+- 24 GB RAM (upgraded from 4 GB standard)
+  - Originally tested with 12 GB
 - 4x USB 2.0
 - 1x FireWire 800
 - 1x DisplayPort/ThunderBolt supports external display up to 2560x1600
@@ -29,8 +38,6 @@ While neither [Intel][6] nor [Microsoft][5] *officially* support Windows 10 on a
 ## Replacing HDD with SSD
 
 I would not recommend installing Windows 10 unless you upgrade the iMac to an SSD.
-
-Replacing the HDD with an SSD immediately makes this iMac a capable machine for general home use.
 
 Before swapping the HDD for the SSD, install the latest MacOS updates on the HDD. This is mainly to ensure that you have the latest firmware installed.
 
@@ -55,9 +62,9 @@ After replacing the HDD with a new SSD, perform a fresh install of MacOS High Si
 
 ## Installing Windows 10 Using Boot Camp
 
-Boot Camp does not allow direct installation of Windows 10 [on this Mac][10]. Because of this, the installation procedure is less-than-straightforward, but eventually results in a fully-functioning and quite usable Windows 10 system which can still be booted into MacOS High Sierra if needed. Once Windows 10 is successfully installed, further updates run normally through Windows Software Update. In other words, you only need to run through this procedure once; after that, everything works normally.
+Boot Camp does not allow direct installation of Windows 10 [on this Mac][10] and therefore requires a less-than-straightforward installation procedure. However, you only need to run through this procedure once. Further Windows 10 updates run normally through Windows Software Update. 
 
-Numerous procedures for installing Windows 10 onto the mid-2011 iMac can be found in blogs, message boards, and YouTube. However, I could not get any of those procedures to work on their own. The following is a procedure that finally worked after a lot of trial-and-error. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
+I found numerous procedures for installing Windows 10 onto the mid-2011 iMac, but I could not get any of them to work on their own. The following is a procedure that I came up with after a lot of trial-and-error. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
 
 Also, I am writing this after-the-fact. I kept notes during the process, but I did not take any screen captures. I may not have written down every specific command or step in the process.
 
@@ -75,7 +82,7 @@ FireWire (IEEE 1394) was not tested.
 
 ### Install Latest MacOS Updates and Firmware
 
-First, run Software Update to get all the latest updates available from Apple. Although High Sierra is no longer supported, you can still download a few updates, including Security Update 2020-006. As mentioned above, you may need to download Security Update 2020-006 separately and manually install it if Software Update fails to install the update.
+First, run Software Update to get all the latest updates available from Apple. Although High Sierra is no longer supported, you can still download a few updates, including Security Update 2020-006. As mentioned above, you may need to [download Security Update 2020-006][13] separately and manually install it if Software Update fails to install the update.
 
 Confirm the firmware versions in About This Mac -> System Report before proceeding:
 
@@ -92,6 +99,7 @@ Confirm the firmware versions in About This Mac -> System Report before proceedi
   - I eventually found an original Windows 8.1 DVD from a previous Windows purchase from several years ago. Boot Camp finally worked when using this old 8.1 install DVD.
 - Valid Windows License Key
   - This is required during the Windows 8 installation process.
+  - Note that [Microsoft no longer updates Windows 8 product keys][17] to Windows 10
 - Printed out copy of the procedure below.
 
 ### The Boot Camp Procedure
@@ -167,10 +175,6 @@ I recommend that you read the procedure in full before starting.
 - **You now have a fully-functional Windows 10 machine**
   - You can switch back to MacOS at any time using Boot Camp
 
-## Issues
-
-Open a GitHub issue if you encounter any problems or have improvement ideas.
-
 ## References
 
 - Apple [spec page][3]
@@ -185,8 +189,8 @@ The software and other files in this repository are released under what is commo
 
 ## Revision History
 
-1.0 - 2/19/2022 - Initial version based on an actual installation performed in January 2022.  
-Minor clarifying updates have been made since then, but the overall procedure is the same.
+Feb 2022 - Initial version based on an actual installation performed in January 2022.  
+Jan 2025 - Repo archived. No further updates planned.
 
 [1]: https://everymac.com/systems/apple/imac/specs/imac-core-i5-2.5-21-inch-aluminum-mid-2011-thunderbolt-specs.html
 [2]: https://eshop.macsales.com/item/OWC/KITIM11HE500/
@@ -202,6 +206,9 @@ Minor clarifying updates have been made since then, but the overall procedure is
 [12]: https://www.youtube.com/watch?v=Nepfo5ASWyU
 [13]: https://support.apple.com/kb/DL2059?locale=en_US
 [14]: https://macsales.com
+[15]: https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro
+[16]: https://arstechnica.com/gadgets/2024/10/how-to-upgrade-to-windows-11-whether-your-pc-is-supported-or-not/
+[17]: https://devicepartner.microsoft.com/en-us/communications/comm-windows-ends-installation-path-for-free-windows-7-8-upgrade
 [100]: https://choosealicense.com/licenses/mit/
 [101]: ./LICENSE.txt
 [//]: # ([200]: https://github.com/Andy4495/Windows10-on-iMac2011)
