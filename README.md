@@ -6,7 +6,7 @@
 
 With the announced [end-of-support for Windows 10][15], this repo has been archived and will no longer be updated.
 
-I attempted to [update to Windows 11][16], but was unsuccessful. An in-place failed due to not meeting the hardware requirements (secure boot and TPM), despite making registry key updates to disable the hardware checks. A clean install of Windows 11 also failed because the BootCamp partition was formatted MBR instead of GPT and I could not find a simple way to change it.
+I attempted to [update to Windows 11][16], but was unsuccessful. An in-place upgrade failed for not meeting the hardware requirements (secure boot and TPM), despite making registry key updates that are supposed to disable the hardware checks. A clean install of Windows 11 also failed because the BootCamp partition was formatted MBR instead of GPT and I could not find a simple way to change it.
 
 Also, now that [Microsoft no longer allows free upgrades to Windows 10][17] from Windows 8 product keys, this procedure may no longer be useable.
 
@@ -62,7 +62,7 @@ After replacing the HDD with a new SSD, perform a fresh install of MacOS High Si
 
 ## Installing Windows 10 Using Boot Camp
 
-Boot Camp does not allow direct installation of Windows 10 [on this Mac][10] and therefore requires a less-than-straightforward installation procedure. However, you only need to run through this procedure once. Further Windows 10 updates run normally through Windows Software Update. 
+Boot Camp does not allow direct installation of Windows 10 [on this Mac][10] and therefore requires a less-than-straightforward installation procedure. However, you only need to run through this procedure once. Further Windows 10 updates run normally through Windows Software Update.
 
 I found numerous procedures for installing Windows 10 onto the mid-2011 iMac, but I could not get any of them to work on their own. The following is a procedure that I came up with after a lot of trial-and-error. It does not specifically match any single existing procedure that I could find. As with any how-to you find on the Internet, while it worked for me, there is no guarantee that this procedure will work for you.
 
@@ -182,6 +182,7 @@ I recommend that you read the procedure in full before starting.
 - Core i3-2400S [spec page][4]
 - 500 GB SSD [upgrade kit][2]
 - SSD [installation video][12]
+- Windows 10 [end of support][15]
 
 ## License
 
